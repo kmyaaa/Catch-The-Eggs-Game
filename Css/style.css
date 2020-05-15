@@ -1,0 +1,145 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#container {
+    height: 85%;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 2.5%; 
+    position: relative;
+    overflow: hidden;
+    background-image:url('../Images/Farm.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.score_help {
+    margin: 20px 0px 50px 50px;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.life_help {
+    width: fit-content;
+    margin: 0px 50px 20px 50px;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    font-weight: bold;
+    text-align:left;
+    font-size: 30px;
+}
+
+.bird {
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 2%;
+    background: url('../Images/FromLeftWhiteBird.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+
+}
+
+
+#bird1 {
+    animation: fly 14s infinite ease-in-out;
+}
+
+
+#bird2 {
+
+    animation: fly2 10s ease-in-out infinite;
+}
+
+#bird3 {
+
+    animation: fly3 12s ease-in-out infinite;
+}
+
+.egg {
+    position: relative;
+    top: 55%;
+    height: 25%;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 99;
+    left: 20%;
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+
+#basket {
+    height: 130px;
+    width: 120px;
+    position: absolute;
+    bottom: 15px;
+    background: url('../Images/Basket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 11;
+}
+#restart {
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: fuchsia;
+    color: white;
+    top: 40%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+@keyframes fly{
+    0%
+    {
+        left: -20%;
+    }
+    100%
+    {
+      left: 100%;
+    }
+}
+@keyframes fly2{
+    0%
+    {       
+        top: 8%;
+        left: 0%;
+    }
+    100%
+    {
+        top: 8%;
+        left: 100%; 
+    }
+}
+@keyframes fly3{
+    0%
+    {       
+        top: 12%;
+        left: -10%;
+    }
+    100%
+    {
+        top: 12%;
+        left: 100%; 
+    }
+}
