@@ -14,7 +14,7 @@ $(document).ready(function () {
         else {
            // alert("plz choose mood")
            dialog.alert({
-                title: "plz choose your mode",
+                title: "please choose your mode",
               });
         }
     })
@@ -24,7 +24,7 @@ $(document).ready(function () {
     $(".rulesBtn").click(function(){
         dialog.alert({
             title: "Rules",
-            message: "Try to catch eggs by moving basket with or arrows. Easy Mode: Egg = 1point"
+            message: "Try to catch eggs by moving basket with arrows. Easy Mode: Egg = 1point"
           });
     })
     
